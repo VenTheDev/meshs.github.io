@@ -4,15 +4,27 @@ body {
 }
 
 .logo img {
-    height: 100px;
-    width: 400px;
+    height: 95px;
+    width: 350px;
     position: absolute;
     transform: translateX(-5%);
-    top: 0px;
+    top: -2px;
     left: 20px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    padding: 2px;
+}
+
+.logo img:hover {
+    box-shadow: 0 0 0px rgba(255, 215, 0, 0.8);
+    outline: 2px solid #ffffffa3;
+    outline-offset: -6px; /* Smaller = closer */
+    border-radius: 50px;
 }
 
 .header {
+    z-index: 10;
     width: 100%;
     height: 100px;
     background: #194a19;
@@ -31,7 +43,7 @@ body {
 }
 
 .nav a{
-    font-size: 12px;
+    font-size: 16px;
     color: white;
     text-decoration: none;
     display: flex;
@@ -42,14 +54,14 @@ body {
 }
 
 .nav a img {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     filter: brightness(0) invert(1);
 }
 
 .nav a svg {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .search-container {
@@ -77,7 +89,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
     align-items: center;
-    gap: 8px; b
+    gap: 8px;
 }
 
 #searchBox input {
@@ -93,4 +105,58 @@ body {
     background: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 674px; /* or your desired height */
+    overflow: hidden;
+}
+
+.background .bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills the banner nicely */
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.background .bg.active {
+    opacity: 1;
+}
+
+.background img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.readmore {
+    position: absolute;
+    z-index: 10;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.readmore a {
+    background: rgba(25, 74, 25, 0.75);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border: 2px solid #FFD700;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.readmore a:hover {
+    background: #FFD700;
+    color: #194a19;
 }
