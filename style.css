@@ -4,17 +4,17 @@ body {
 }
 
 .logo img {
-    height: 165px;
-    width: 295px;
+    height: 100px;
+    width: 400px;
     position: absolute;
     transform: translateX(-5%);
-    top: -45px;
+    top: 0px;
     left: 20px;
 }
 
 .header {
     width: 100%;
-    height: 70px;
+    height: 100px;
     background: #194a19;
     border-bottom: 3px solid #FFD700;
     position: relative;
