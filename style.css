@@ -54,6 +54,7 @@ body {
 
 .search-container {
     position: relative;
+    filter: brightness(0) invert(1);
 }
 
 #searchBtn {
@@ -69,17 +70,18 @@ body {
 #searchBox {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 0;
     background: white;
     padding: 8px 12px;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
     align-items: center;
     gap: 8px;
 }
 
 #searchBox input {
+    color: black;
     border: none;
     outline: none;
     width: 220px;
