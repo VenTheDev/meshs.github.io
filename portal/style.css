@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background-color: #1b5e20; /* Green */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-bottom: 4px solid gold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo img {
+    height: 85px;
+    width: auto;
+}
+
+.meshstext {
+    color: gold;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 10%;
+}
+
+.nav-text a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}

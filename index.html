@@ -3,67 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maximo Estrella Senior High School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/images/meshsicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
+    <title>Maximo Estrella Senior High School</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="assets/images/meshslogo.png" alt="The logo of Maximo Estrellla Senior High School">
-            </a>
+        <a href="#">
+            <div class="logo">
+                <img src="assets/images/meshsicon.png" alt="meshslogo">
+                <div class="logo-text">
+                    <div class="uplogotext">
+                        Maximo Estrella Senior High School
+                    </div>
+                    <div class="lowlogotext">
+                        <span class="highlight">M</span>olding <span class="highlight">E</span>xcellent <span class="highlight">S</span>tudents with <span class="highlight">H</span>onor and <span class="highlight">S</span>elf-discipline
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="nav">
-            <a href="about.html">
+    </a>
+    
+        <nav class="nav-bar">
+
+        <!-- Admissions -->
+        <div class="dropdown">
+            <a href="admissions">
+                Admissions
+                <img src="assets/images/arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            </a>
+
+            <div class="dropdown-menu">
+                <a href="enrollment">Enrollment</a>
+                <a href="requirements">Requirements</a>
+                <a href="faqs">FAQs</a>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="dropdown">
+            <a href="history">
                 About
                 <img src="assets/images/arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
             </a>
 
-            <a href="admissions.html">
-                Admissions
-                <img src="assets/images/arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
-            </a>
-            
-            <a href="meshsportal.github.io">
-                Portal
-            </a>
-
-            <a href="academics.html">
-                Academics
-            </a>
-
-            <a href="research.html">
-                Research
-            </a>
-
-            <a href="news.html">
-                News
-            </a>
-
-            <div class="search-container">
-                <button id="searchBtn" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#1f1f1f"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-                </button>
-
-                <div id="searchBox">
-                    <input type="text" placeholder="Search here...">
-                    <button id="closeBtn" type="button">&times;</button>
-                </div>
+            <div class="dropdown-menu">
+                <a href="history">History</a>
+                <a href="mission-&-vision">Mission & Vision</a>
+                <a href="hymn">Hymn</a>
+                <a href="faculty">Faculty</a>
+                <a href="contact">Contact</a>
             </div>
         </div>
-    </header>
-    <div class="background">
-            <img id="bg1" class="bg active" src="assets/images/background1.png" alt="">
-            <img id="bg2" class="bg" src="" alt="">
 
-            <div class="readmore">
-                <a href="about.html">Read More</a>
-            </div>
+        <a href="../student/onlineportal">Portal</a>
+        <a href="academics">Academics</a>
+        <a href="research">Research</a>
+        <a href="news">News</a>
+    </nav>
     </div>
+    </header>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slide" id="slide-1">
+                    <img src="assets/images/background1.png" alt="">
+                    <a href="page1.html" class="readmore">Read More</a>
+        
+                    <div class="hero-text">
+                        <h2>Where Learning Begins and Leaders Are Made</h2>
+                    </div>
+                    <div class="hero-description">
+                        <p>MESHS is a place where students grow academically, socially, and personally through quality education and guidance.</p>
+                    </div>
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="assets/images/background2.png" alt="">
+                    <a href="page2.html" class="readmore">Read More</a>
+        
+                    <div class="hero-text">
+                        <h2>Unlock Your Potential at MESHS</h2>
+                    </div>
+                    <div class="hero-description">
+                        <p>Discover opportunities, build confidence, and develop skills that prepare you for a brighter future.</p>
+                    </div>
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="assets/images/background3.png" alt="">
+                    <a href="page3.html" class="readmore">Read More</a>
+        
+                    <div class="hero-text">
+                        <h2>Excellence Starts Here</h2>
+                    </div>
+                    <div class="hero-description">
+                        <p>Join a community that values hard work, discipline, and success in every learner’s journey.</p>
+                    </div>
+                </div>
+                <div class="slide" id="slide-4">
+                    <img src="assets/images/background4.png" alt="">
+                    <a href="page4.html" class="readmore">Read More</a>
+        
+                    <div class="hero-text">
+                        <h2>Dream. Learn. Achieve.</h2>
+                    </div>
+                    <div class="hero-description">
+                        <p>At MESHS, every student is empowered to dream big, learn deeply, and achieve greatness.</p>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div class="newstext">
+        <h1>News</h1>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <a href="https://facebook.com">
+                <img src="./assets/images/facebook.png" alt="Facebook">
+            </a>
 
+            <a href="https://x.com">
+                <img src="./assets/images/x.png" alt="X">
+            </a>
+
+            <a href="https://youtube.com">
+                <img src="./assets/images/youtube.png" alt="YouTube">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="./assets/images/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://linkedin.com">
+                <img src="./assets/images/linkedin.png" alt="LinkedIn">
+            </a>
+            <div class="copyright-claim">
+                Copyright ©2026; Designed by <a href="https://github.com/VenTheDev" style="text-decoration: none;"><span class="highlightuser">VenTheDev</span></a>
+            </div>
+        </div>
+        <div class="watermarks">
+                <img src="assets/images/bagongpilipinas.png" alt="">
+                <img src="assets/images/deped.png" alt="">
+                <img src="assets/images/makati.png" alt="">
+                <img src="assets/images/meshsicon.png" alt="">
+            </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
